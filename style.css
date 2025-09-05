@@ -1,0 +1,36 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#contenedor {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;         
+  height: 100vh;                  
+  padding: 0 20px;              
+  box-sizing: border-box;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  #contenedor {
+    flex-direction: column;       
+    justify-content: center;     
+    gap: 15px;                   
+  }
+}
